@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learngetx/main_page.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -9,7 +8,7 @@ class LoginPage extends StatelessWidget {
         body: Center(
       child: ElevatedButton(
         onPressed: () {
-          Get.off(MainPage());
+          Get.offNamed('main');
         },
         child: Text("LOGIN"),
       ),

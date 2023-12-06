@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learngetx/main_page.dart';
 
 class ThirdPage extends StatelessWidget {
   @override
@@ -24,7 +23,7 @@ class ThirdPage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Get.offAll(MainPage());
+                  Get.offAllNamed('/main');
                 },
                 child: Text("Back to Main Page"),
               )
