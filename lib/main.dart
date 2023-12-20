@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:learngetx/kuldiproject/home_2.dart';
+import 'package:learngetx/kuldiproject/home_3.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,11 +34,21 @@ void main() {
 // }
 
 // //  Kuldi Project Tutor 2
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return GetMaterialApp(
+//       home: HomePage2(),
+//     );
+//   }
+// }
+
+//  Materi Worker
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      home: HomePage2(),
+    return MaterialApp(
+      home: PageWorker(),
     );
   }
 }
