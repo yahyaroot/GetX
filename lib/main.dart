@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learngetx/kuldiproject/home_3.dart';
+import 'package:get/get.dart';
+import 'package:learngetx/kuldiproject/pages/main_1.dart';
+import 'package:learngetx/kuldiproject/routes/page_route.dart';
 
 void main() {
   runApp(MyApp());
@@ -44,11 +46,18 @@ void main() {
 // }
 
 //  Materi Worker
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: PageWorker(),
+//     );
+//   }
+
+//  Materi Navigation Named
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: PageWorker(),
-    );
+    return GetMaterialApp(home: PageOne(), getPages: AppRoute.pages);
   }
 }
