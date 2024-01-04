@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learngetx/kuldiproject/pages/main_1.dart';
-import 'package:learngetx/kuldiproject/routes/page_route.dart';
+import 'package:learngetx/kuldiproject/routes_2/route_name.dart';
+
+import 'kuldiproject/pages_2/main.dart';
 
 void main() {
   runApp(MyApp());
@@ -55,9 +56,19 @@ void main() {
 //   }
 
 //  Materi Navigation Named
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return GetMaterialApp(home: PageOne(), getPages: AppRoute.pages);
+//   }
+// }
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(home: PageOne(), getPages: AppRoute.pages);
+    return GetMaterialApp(
+      home: PageHome(),
+      getPages: AppRoute.pages,
+    );
   }
 }
