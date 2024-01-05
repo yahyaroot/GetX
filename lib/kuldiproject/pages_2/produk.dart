@@ -9,31 +9,26 @@ class PageProduk extends StatelessWidget {
         appBar: AppBar(),
         body: Container(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
-                child: Text("Produk Page"),
+                child: Text(
+                  "All Produk Page",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
               ),
+              SizedBox(height: 15),
               ElevatedButton(
-                onPressed: () {
-                  Get.toNamed(PageName.pageProduct);
-                  child:
-                  Text("Produk 1");
-                },
+                onPressed: () => Get.toNamed(
+                    PageName.pageProduct + '/1?name=Produk 1&ukuran=XL'),
+                child: Text("Produk 1"),
               ),
+              SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () {
-                  Get.back();
-                  child:
-                  Text("Produk 2");
-                },
-              ),
+                  onPressed: () => Get.back(), child: Text("Produk 2")),
+              SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () {
-                  Get.back();
-                  child:
-                  Text("Produk 3");
-                },
-              ),
+                  onPressed: () => Get.back(), child: Text("Produk 3")),
             ],
           ),
         ));

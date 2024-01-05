@@ -9,11 +9,23 @@ class PageHome extends StatelessWidget {
         appBar: AppBar(),
         body: Container(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Center(child: Text("Ini Page 1")),
-              ElevatedButton(onPressed: () {
-                Get.toNamed(PageName.pageProduct);
-              })
+              Center(
+                child: Text(
+                  "Ini Page Home",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Get.toNamed(PageName.pageProduct);
+                },
+                child: Text("Pilih Produk"),
+              )
             ],
           ),
         ));
